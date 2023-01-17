@@ -3,7 +3,7 @@
 #include <X11/XF86keysym.h>
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 5;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -16,15 +16,22 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono NerdFont:size=10", "JoyPixels:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono NerdFont:size=10";
 
-static char normbgcolor[]           = "#222222";
+// default colors
+/* static char normbgcolor[]           = "#222222"; */
+/* static char normbordercolor[]       = "#444444"; */
+/* static char normfgcolor[]           = "#bbbbbb"; */
+/* static char selfgcolor[]            = "#eeeeee"; */
+/* static char selbordercolor[]        = "#005577"; */
+/* static char selbgcolor[]            = "#005577"; */
+
+static char normbgcolor[]           = "#000000";
 static char normbordercolor[]       = "#444444";
-static char normfgcolor[]           = "#bbbbbb";
-static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#005577";
-static char selbgcolor[]            = "#005577";
+static char normfgcolor[]           = "#f1f1f1";
+static char selfgcolor[]            = "#b5dcff";
+static char selbordercolor[]        = "#f1f1f1";
+static char selbgcolor[]            = "#000000";
 static char *colors[][3] = {
        /*               fg           bg           border   */
-       /* [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor }, */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbgcolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
 };
