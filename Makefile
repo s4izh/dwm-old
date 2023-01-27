@@ -25,8 +25,13 @@ config.h:
 dwm: ${OBJ}
 	${CC} -o $@ ${OBJ} ${LDFLAGS}
 
-clean:
+clean: theme
 	rm -f dwm ${OBJ} dwm-${VERSION}.tar.gz
+
+theme:
+ifeq (,$(wildcard ./theme.h))
+	ln -s themes/default.h theme.h
+endif
 
 dist: clean
 	mkdir -p dwm-${VERSION}
