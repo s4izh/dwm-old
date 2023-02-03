@@ -4,3 +4,5 @@ config.def.h.orig
 theme.h
 *~
 
+dwm
+.o
