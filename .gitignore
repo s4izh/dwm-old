@@ -5,4 +5,4 @@ theme.h
 *~
 
 dwm
-.o
+*.o
