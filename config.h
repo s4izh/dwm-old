@@ -1,4 +1,4 @@
-// -*- compile-command: "sudo make clean install" -*-
+// -*- compile-command: "sudo -A make clean install" -*-
 /* See LICENSE file for copyright and license details. */
 #include <X11/XF86keysym.h>
 
