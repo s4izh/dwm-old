@@ -13,7 +13,8 @@ static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono NerdFont:size=10", "JoyPixels:pixelsize=12:antialias=true:autohint=true" };
+/* static const char *fonts[]          = { "JetBrainsMono NerdFont:size=10", "JoyPixels:pixelsize=12:antialias=true:autohint=true" }; */
+static const char *fonts[]          = { "mono:size=10", "JoyPixels:pixelsize=12:antialias=true:autohint=true" };
 static const char dmenufont[]       = "JetBrainsMono NerdFont:size=10";
 
 #include "theme.h"
